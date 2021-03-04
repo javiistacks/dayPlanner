@@ -1,0 +1,191 @@
+/************************/
+/*        Global        */
+/************************/
+
+body {
+    background-color: #ecf5ff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  element.style {
+    padding: 0;
+  }
+  
+  textarea{
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #2b213b;
+    border-left: 1px solid #2b213b;
+    padding: 10px;
+  }
+  
+  /************************/
+  /*        Classes       */
+  /************************/
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: #2b213b;
+    border-radius: 0;
+    border-bottom: 10px solid #2b213b;
+  }
+  
+  .row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid #ecf5ff;
+  }
+  
+  .hour {
+    background-color: #ecf5ff;
+    border-top: 1px dashed #2b213b;
+    color: #2b213b;
+    font-weight: bold;
+    padding: 8px 8px 0;
+    text-align: right;
+  }
+  
+  .time-block {
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .description {
+    white-space: pre-wrap;
+  }
+  
+  /************************/
+  /*        Colors        */
+  /************************/
+  
+  .past {
+    background-color: #d3d3d3;
+    color: #2b213b;
+    font-weight: bold;
+  }
+  
+  .present {
+    background-color: #9672cc;
+    color: #2b213b;
+    font-weight: bold;
+  }
+  
+  .future {
+    background-color: rgb(134, 196, 158);
+    color: #2b213b;
+    font-weight: bold;
+  }
+  
+  /************************/
+  /*       Buttons        */
+  /************************/
+  
+  .btnRow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .saveBtn {
+    border: 1px solid #2b213b;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(212, 166, 174);
+    color: white;
+    font-size: 30px;
+  }
+  
+  .saveBtn i:hover {
+    color: hotpink;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+  }
+  
+  .clearBtn {
+    background: linear-gradient(to right,#2b213b, #9672cc, rgb(212, 166, 174), rgb(134, 196, 158), #d3d3d3, #ecf5ff);
+    border-color: #2b213b;
+    color: #ecf5ff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0.5rem;
+    padding: 0.5rem;
+    text-shadow: -1px 0 #2b213b, 0 2px #333, 1px 0 #333, 0 -1px #333;
+    -webkit-border-radius: 1rem;
+  }
+  .clearBtn:hover {
+    cursor: pointer;
+    color: hotpink;
+    box-shadow: 0 0.5rem 0.5rem 0 #2b213b;
+    transform: translateY(0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .clearBtn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  
+  /************************/
+  /*        @Media        */
+  /************************/
+  
+  @media screen and (max-width: 767px) {
+    .display-3 {
+      font-size: 50px;
+    }
+    .hour {
+      min-width: 12%;
+    }
+    .description {
+      max-width: 72%;
+    }
+    .saveBtn {
+      min-width: 16%;
+    }
+    .clearBtn {
+      min-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .clearBtn {
+      font-size: 18px;
+    }
+  
+  @media screen and (max-width: 360px) {
+    .display-3 {
+      font-size: 50px;
+    }
+    .hour {
+      min-width: 12%;
+    }
+    .description {
+      max-width: 70%;
+    }
+    .saveBtn {
+      min-width: 18%;
+    }
+  }
+  
+  @media screen and (max-width: 325px) {
+    .display-3 {
+      font-size: 40px;
+    }
+    .lead {
+      font-size: 15px;
+    }
+    .hour {
+      min-width: 15%;
+    }
+    .description {
+      max-width: 67%;
+    }
+    .saveBtn {
+      min-width: 18%;
+    }
+  }
