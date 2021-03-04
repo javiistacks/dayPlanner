@@ -4,116 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
-
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-
     <div class="container">
-      <!-- 07:00 AM -->
-      <div class="row time-block">
-        <div class="col-1 h07 hour">7 AM</div>
-        <textarea class="col-10 07 description"></textarea>
-        <button class="col-1 b07 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
 
-      <!-- 08:00 AM -->
-      <div class="row time-block">
-        <div class="col-1 h08 hour">8 AM</div>
-        <textarea class="col-10 08 description"></textarea>
-        <button class="col-1 b08 btn saveBtn"><i class="far fa-calendar-check"></i></button>
+      <div class="row time-block" data-time="9">
+        <div class="hour col">9am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="far fa-calendar-check"></i></div>
       </div>
-
-      <!-- 09:00 AM -->
-      <div class="row time-block">
-        <div class="col-1 h09 hour">9 AM</div>
-        <textarea class="col-10 09 description"></textarea>
-        <button class="col-1 b09 btn saveBtn"><i class="far fa-calendar-check"></i></button>
+      <div class="row time-block" data-time="10">
+        <div class="hour col">10am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="far fa-calendar-check"></i></div>
       </div>
-
-      <!-- 10:00 AM -->
-      <div class="row time-block">
-        <div class="col-1 h10 hour">10 AM</div>
-        <textarea class="col-10 10 description"></textarea>
-        <button class="col-1 b10 btn saveBtn"><i class="far fa-calendar-check"></i></button>
+      <div class="row time-block" data-time="11">
+        <div class="hour col">11am</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="far fa-calendar-check"></i></div>
       </div>
-
-      <!-- 11:00 AM -->
-      <div class="row time-block">
-        <div class="col-1 h11 hour">11 AM</div>
-        <textarea class="col-10 11 description"></textarea>
-        <button class="col-1 b11 btn saveBtn"><i class="far fa-calendar-check"></i></button>
+      <div class="row time-block" data-time="12">
+        <div class="hour col">12pm</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="far fa-calendar-check"></i></div>
       </div>
-
-      <!-- 12:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h12 hour">12 PM</div>
-        <textarea class="col-10 12 description"></textarea>
-        <button class="col-1 b12 btn saveBtn"><i class="far fa-calendar-check"></i></button>
+      <div class="row time-block" data-time="13">
+        <div class="hour col">1pm</div>
+        <div class="event-input col"><input type="text" name="event" class="input"></div>
+        <div class="save col"><i class="far fa-calendar-check"></i></div>
       </div>
-
-      <!-- 01:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h13 hour">1 PM</div>
-        <textarea class="col-10 13 description"></textarea>
-        <button class="col-1 b13 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- 02:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h14 hour">2 PM</div>
-        <textarea class="col-10 14 description"></textarea>
-        <button class="col-1 b14 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- 03:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h15 hour">3 PM</div>
-        <textarea class="col-10 15 description"></textarea>
-        <button class="col-1 b15 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- 04:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h16 hour">4 PM</div>
-        <textarea class="col-10 16 description"></textarea>
-        <button class="col-1 b16 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- 05:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h17 hour">5 PM</div>
-        <textarea class="col-10 17 description"></textarea>
-        <button class="col-1 b17 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- 06:00 PM -->
-      <div class="row time-block">
-        <div class="col-1 h18 hour">6 PM</div>
-        <textarea class="col-10 18 description"></textarea>
-        <button class="col-1 b18 btn saveBtn"><i class="far fa-calendar-check"></i></button>
-      </div>
-
-      <!-- Clear -->
-      <div class="btnRow">
-        <button class="btn clearBtn col-5">Clear Calendar</button>
-      </div>
+      <div class="row time-block" data-time="14">
+          <div class="hour col">2pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+        <div class="row time-block" data-time="15">
+          <div class="hour col">3pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+        <div class="row time-block" data-time="16">
+          <div class="hour col">4pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+        <div class="row time-block" data-time="17">
+          <div class="hour col">5pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+        <div class="row time-block" data-time="18">
+          <div class="hour col">6pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+        <div class="row time-block" data-time="19">
+          <div class="hour col">7pm</div>
+          <div class="event-input col"><input type="text" name="event" class="input"></div>
+          <div class="save col"><i class="far fa-calendar-check"></i></div>
+        </div>
+      <!-- Timeblocks go here -->
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./scripts/script.js"></script>
+ 
   </body>
 </html>
